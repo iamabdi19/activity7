@@ -47,11 +47,11 @@ function displayResults() {
 }
 
 function displayScores() {
-	var headerRow = "<tr><th>Name</th><th>Score</th></tr>"
+	var headerRow = "<tr><th>Name</th><th>Score</th></tr>";
 	var scoreRows = "";
 
 	for (var i = 0; i < names.length; i++) {
-		scoreRows += `<tr><td>${names[i]}</td><td>${scores[i]}</td></tr>`;
+		scoreRows += "<tr><td>" + names[i] + "</td><td>" + scores[i] + "</td></tr>";
 	}
 
 	document.getElementById("scores_table").innerHTML = "<h2>Scores</h2><br/>" + headerRow + scoreRows;
